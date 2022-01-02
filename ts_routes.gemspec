@@ -26,9 +26,9 @@ Gem::Specification.new do
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.required_ruby_version = ">= 2.3.0"
+  spec.required_ruby_version = ">= 2.5.0"
 
-  spec.add_runtime_dependency "railties", ">= 4.0"
+  spec.add_runtime_dependency "railties", ">= 4.0", "< 6.1.0"
 
   spec.add_development_dependency "rake"
   spec.add_development_dependency "minitest", "~> 5.0"
